@@ -1,0 +1,12 @@
+body {
+  background-color: #657c6a;
+  color: #000;
+  justify-items: center;
+}
+
+main {
+  background-color: #a2b9a7;
+  padding: 30px;
+  border: 1px solid #000;
+  border-radius: 15px;
+}
