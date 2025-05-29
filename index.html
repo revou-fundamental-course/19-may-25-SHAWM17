@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Temperature Convert</title>
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Tagesschrift&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Website Konversi Suhu</h1>
     <!-- Header Content -->
-    <header></header>
+    <header>
+      <h1>Website Konversi Suhu</h1>
+    </header>
     <!-- Main Content -->
     <main>
       <!-- Intro -->
@@ -22,25 +30,26 @@
         <div>
           <label for="input-suhu">Celcius (&deg;C)</label>
           <br />
-          <input type="number" />
+          <input type="number" class="box" id="input-suhu" />
         </div>
         <div class="button">
-          <button>Konversi</button><button>Reset</button
-          ><button>Reverse</button>
+          <button onclick="konversi()" type="button">Konversi</button
+          ><button onclick="hapus()" type="button">Reset</button
+          ><button onclick="" type="button">Reverse</button>
         </div>
       </form>
 
       <!-- Hasil Konversi -->
       <div>
-        <label for="hasil-suhu">Fahrenheit (&deg;F)</label><br />
-        <textarea id="detail-suhu" readonly></textarea>
+        <label for="output-suhu">Fahrenheit (&deg;F)</label><br />
+        <textarea id="output-suhu" readonly class="box"></textarea>
       </div>
 
       <!--Cara Kalkulasi -->
       <section class="padding-medium">
         <div>
           <label for="detail-suhu">Penjelasan:</label><br />
-          <textarea id="detail-suhu" readonly></textarea>
+          <textarea id="detail-suhu" readonly class="box"></textarea>
         </div>
       </section>
 
@@ -67,5 +76,8 @@
     </main>
     <!-- Footer -->
     <footer></footer>
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
   </body>
 </html>
