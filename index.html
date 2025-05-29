@@ -28,20 +28,21 @@
       <!-- Konversi Tool -->
       <form action="">
         <div>
-          <label for="input-suhu">Celcius (&deg;C)</label>
+          <label for="input-suhu" id="input-label">Celcius (&deg;C)</label>
           <br />
           <input type="number" class="box" id="input-suhu" />
         </div>
         <div class="button">
           <button onclick="konversi()" type="button">Konversi</button
           ><button onclick="hapus()" type="button">Reset</button
-          ><button onclick="" type="button">Reverse</button>
+          ><button onclick="reverse()" type="button">Reverse</button>
         </div>
       </form>
 
       <!-- Hasil Konversi -->
       <div>
-        <label for="output-suhu">Fahrenheit (&deg;F)</label><br />
+        <label for="output-suhu" id="output-label">Fahrenheit (&deg;F)</label
+        ><br />
         <textarea id="output-suhu" readonly class="box"></textarea>
       </div>
 
